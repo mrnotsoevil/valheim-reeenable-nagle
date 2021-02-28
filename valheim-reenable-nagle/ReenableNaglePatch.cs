@@ -4,10 +4,10 @@ using System.Runtime.InteropServices;
 using HarmonyLib;
 using Steamworks;
 
-namespace valheim_reenable_nagel
+namespace valheim_reenable_nagle
 {
     [HarmonyPatch(typeof(ZSteamSocket), "SendQueuedPackages")]
-    public class ReenableNagelPatch
+    public class ReenableNaglePatch
     {
         static bool Prefix(ZSteamSocket ___instance, Queue<byte[]> ___m_sendQueue, ref int ___m_totalSent, HSteamNetConnection ___m_con)
         {

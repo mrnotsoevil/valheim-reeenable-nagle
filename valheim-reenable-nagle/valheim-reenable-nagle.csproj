@@ -7,8 +7,8 @@
         <ProjectGuid>{698819EE-4FFE-453D-B656-4129C181ABC9}</ProjectGuid>
         <OutputType>Library</OutputType>
         <AppDesignerFolder>Properties</AppDesignerFolder>
-        <RootNamespace>valheim_reenable_nagel</RootNamespace>
-        <AssemblyName>valheim_reenable_nagel</AssemblyName>
+        <RootNamespace>valheim_reenable_nagle</RootNamespace>
+        <AssemblyName>valheim_reenable_nagle</AssemblyName>
         <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
@@ -62,7 +62,7 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="ReenableNagelPatch.cs" />
+        <Compile Include="ReenableNaglePatch.cs" />
         <Compile Include="ValheimReenableNaglePlugin.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
