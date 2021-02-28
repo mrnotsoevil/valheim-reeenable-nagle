@@ -9,7 +9,7 @@ namespace valheim_reenable_nagle
     {
         public void Awake()
         {
-            Debug.Log("[Valheim Show Me!] Making player show on map by default ...");
+            Debug.Log("[Valheim Re-enable Nagle] Applying patch ...");
             Harmony.CreateAndPatchAll(typeof(ReenableNaglePatch));
         }
     }

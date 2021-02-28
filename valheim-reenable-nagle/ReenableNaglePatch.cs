@@ -9,9 +9,9 @@ namespace valheim_reenable_nagle
     [HarmonyPatch(typeof(ZSteamSocket), "SendQueuedPackages")]
     public class ReenableNaglePatch
     {
-        static bool Prefix(ZSteamSocket ___instance, Queue<byte[]> ___m_sendQueue, ref int ___m_totalSent, HSteamNetConnection ___m_con)
+        static bool Prefix(ZSteamSocket __instance, Queue<byte[]> ___m_sendQueue, ref int ___m_totalSent, HSteamNetConnection ___m_con)
         {
-            if (!___instance.IsConnected())
+            if (!__instance.IsConnected())
                 return false;
             while (___m_sendQueue.Count > 0)
             {
