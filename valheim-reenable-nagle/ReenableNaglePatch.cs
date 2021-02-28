@@ -28,7 +28,7 @@ namespace valheim_reenable_nagle
                 }
                 else
                 {
-                    ZLog.Log((object) ("Failed to send data " + (object) connection));
+                    ZLog.Log("Failed to send data " + connection);
                     break;
                 }
             }
